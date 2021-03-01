@@ -1,11 +1,12 @@
 /*  Variables  */
-$color-one: #0097e6;
+$color-one:  #fed136;
 $color-two: #33d9b2;
 $color-three: #ff5252;
 $color-four: #ffffff;
 $color-five: #2c2c54;
-$font-header: 'Ramabhadra', san-serif;
+$font-header: 'Montserrat', sans-serif;
 $font-text: 'Signika', serif;
+$font-golden: 'Great Vibes', cursive;
 $transition: all 1s;
 
 /*  Global */
@@ -23,44 +24,69 @@ body {
 
 .container {
     max-width: 1140px;
-    padding: 0 20px;
-    margin: 0 auto;
-
-
+    margin: 0 auto;    
 }
 
 .container h1 {
     font-size: 48px;
-    margin: 0 0 72px 20px;
+    margin-bottom: 18px;
 }
 
 section {
-    padding: 96px 0;
+    padding: 120px 0;
 }
 
-.flex-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+p {
+    color: #777777;
+    font-size: 1.1em;
+    letter-spacing: -0.35px;
+    font-weight: 400;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: $font-header;
+    text-align: center;
+}
+
+h3 {
+    width: 296px;
+    height: 17px;
+    color: #777777;
+    font-family: $font-text;
+    font-size: 1.1em;
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: -0.7%;
+}
+.row {
+    justify-content: space-around;       
 }
 
 .btn {
     display: inline-block;
-    min-width: 160px;
-    margin: 24px auto 0 auto;
-    padding: 16px;
-    border-radius: 5px;
-    font-family: $font-text;
-    font-size: 16px;
-    text-align: center;
+    min-width: 138px;
+    min-height: 65px;    
+    padding: 25px 51px 26px;
+    font-family: $font-header;
+    font-size: 14px;    
     text-decoration: none;
     cursor: pointer;
-    border-width: 2px;
-    border-style: solid;
-    background-color: inherit;
+    background-color: $color-one;
     background-position: 100% 0;
     background-size: 300%;
     transition: $transition;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .btn:hover {
@@ -71,23 +97,30 @@ section {
 /*   Navigation  */
 .navigation {
     background: $color-one;
-    padding: 12px 0;
+    padding: 0;
 }
 
 .navigation ul {
     padding: 0;
-    margin: 0;
+    margin: 0;    
     list-style-type: none;
+    position: absolute;
+    top: 5vmax;
+    right: 6vmax;
+    z-index: 1;
 }
 
 .navigation ul li {
     display: inline-block;
-    margin: 0 36px 0 0;
+    margin: 0 40px 0 0;
     position: relative;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
 }
 
 .navigation a {
-    text-decoration: none;
+    text-decoration: none;    
+    font-size: 1em;
     color: $color-four;
 }
 
@@ -113,46 +146,10 @@ section {
     position: absolute;
 }
 
-.navigation ul ul a {
-    color: $color-one;   
-    display: block;
-    padding: 0 24px;
-}
-
-.navigation ul ul a:hover {
-    color: $color-two;
-}
-
 /*  Splash  */
-.splash {
-    background: $color-one;
+.splash {    
+    background-image: url('../images/Background.png');    
+    background-size: cover;
     color: $color-four;
-    min-height: 500px;
-    display: flex;
-}
-
-.splash-inner {
-    margin: 10% auto;
-    max-width: 70%;
-}
-
-.page-title {
-    margin: 0;
-    font-size: 72px;
-    word-spacing: 0;
-    font-weight: 700;
-    line-height: 1.2;
-    font-family: $font-header;
-    text-align: center;
-}
-
-.page-subtitle {
-    margin: 48px auto;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.splash-inner .btn {
-    margin-left: auto;
+    min-height: 930px;    
 }
