@@ -31,7 +31,7 @@ body {
 
 section {
     padding: 120px 0;
-    padding: 96px 0;
+    padding: 120px 0;
 }
 
 p {
@@ -60,6 +60,9 @@ h3 {
     margin: 0 auto;
     margin-bottom: 5%;
     margin-top: -0.7%;
+    position: relative;
+    left: 40%;
+    text-align: right;
 }
 .row {
     justify-content: space-around;       
@@ -85,6 +88,7 @@ h3 {
     text-align: center;
     width: fit-content;
     margin: 0 auto;
+    opacity: 0.5;
 }
 
 .btn:hover {
@@ -168,6 +172,9 @@ h3 {
     position: absolute;
     top: 5%;
     left:20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 /*  Services  */
 .services h1 {
