@@ -55,8 +55,7 @@ h3 {
 }
 
 .row {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .btn {
@@ -77,8 +76,6 @@ h3 {
   font-weight: 700;
   border-radius: 5px;
   text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -108,10 +105,8 @@ h3 {
   display: inline-block;
   margin: 0 40px 0 0;
   position: relative;
-  -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
 }
 
 .navigation a {
@@ -149,4 +144,5 @@ h3 {
   color: #ffffff;
   min-height: 930px;
 }
+
 /*# sourceMappingURL=style.css.map */
