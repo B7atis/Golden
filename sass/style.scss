@@ -67,19 +67,11 @@ h1 {
 }
 
 h3 {
-    width: 296px;
-    height: 17px;
-    color: #777777;
-    font-family: $font-text;
-    font-size: 1.1em;
-    font-style: italic;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 5%;
-    margin-top: -0.7%;
-    position: relative;
-    left: 40%;
-    text-align: right;
+    background-size: cover;
+    color: $color-four;
+    min-height: 730px;
+    max-height: 1000px;
+    display: flex;
 }
 .row {
     justify-content: space-around; 
@@ -208,6 +200,11 @@ h3 {
     margin: 5vw auto 0;
     left: 50%;
     transform: inherit;
+}
+.splash:after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.5;
 }
 
 .page-title {
