@@ -1,7 +1,7 @@
 /*  Variables  */
 
 $color-one:  #fed136;
-$color-two: #33d9b2;
+$color-two: #2844e2;
 $color-three: #ff5252;
 $color-four: #ffffff;
 $color-five: #2c2c54;
@@ -295,20 +295,18 @@ footer {
 
 footer li {
     list-style-type: none;
-    display: inline;
-
+    display: inline;    
 }
 
 footer ul li {
     font-size: 0;
-    padding-right: 9px;
+    padding-right: 9px;   
 }
 
 /* Social media */
 
 .social-media {
-    position: relative;
-
+    position: relative;    
     transform: translateX(-50%);
 }
 
@@ -318,18 +316,18 @@ footer ul li {
     font-size: 18px;
     height: 40px;
     width: 40px;
-    margin: 0 auto;
-
+    margin: 0 auto;    
     line-height: 40px;
     padding-top: 0;
     border-radius: 50%;
-    text-align: center;
+    text-align: center;    
 }
 
 .page-footer .row {
     width: 100%;
     justify-content: center;
 }
+
 .social-media ul li i::before {
     margin-top: 10px;
 }
@@ -337,7 +335,7 @@ footer ul li {
 .copyright {
     position: relative;
     left: -50%;
-    transform: translateX(100%);
+    transform: translateX(50%);
 }
 
 .copyright p {
@@ -346,4 +344,4 @@ footer ul li {
     font-style: normal;
     font-family: $font-header;
     font-size: 14px;
-} 
+}
