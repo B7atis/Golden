@@ -1,8 +1,8 @@
 /*  Variables  */
 
-$color-one:  #fed136;
+$color-one:  #fccf2f;
 $color-two: #2844e2;
-$color-three: #ff5252;
+$color-three: #ff1616;
 $color-four: #ffffff;
 $color-five: #2c2c54;
 $font-header: 'Montserrat', sans-serif;
@@ -345,3 +345,107 @@ footer ul li {
     font-family: $font-header;
     font-size: 14px;
 }
+
+/* Responsiv w<618px h<315px */
+
+@media (max-width: 618px) and (min-height: 315px) {   
+    
+    section {
+        padding: 2em 0;
+    }
+
+    .btn {             
+        padding: 0.5em 1em 0.5em;        
+        font-size: 1.5em;
+        text-align: center; 
+        margin: 0 auto;       
+    }
+
+    p {
+        font-size: 1.2em;              
+    }
+
+    .navigation ul {        
+        position: absolute;
+        width: 90%;
+        flex-direction: row;        
+        top: 20vmin;        
+        left: 50%;
+        right: auto;
+        text-align: center;
+        transform: translateX(-45%);
+    }
+    
+    .navigation ul li {
+        display: block;
+        height: 2em;
+        text-align: center;
+        left: -5%;        
+        margin: 0 2% 0 0;
+        position: relative;        
+    }
+    
+    .navigation a {        
+        font-size: 1.1em;        
+    }
+    .golden {
+        font-size: 2em;
+        left: 7vmin;
+    }
+
+    .splash-inner {
+        top: 55%;          
+    }
+
+    .page-subtitle {
+        font-size: 1.7em;
+        margin-bottom: 2vh;
+    }
+
+    .page-title {        
+        font-size: 2.1em;               
+        margin-bottom: 0;
+        padding-bottom: 3vh;           
+    }
+
+    .page-footer .row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+    }
+    
+    footer {
+        margin: 0;        
+    }
+
+    .social-media {             
+        left: -20px;     
+        transform: translateX(0);          
+    }
+
+    .social-media ul li{
+        margin: 0;
+    }
+    
+    .social-media ul li i {
+        font-size: 1.5rem;
+        height: 3rem;
+        width: 3rem;        
+        line-height: 3rem;         
+    }
+    
+    .copyright {        
+        height: 3em;       
+        bottom: 0.2em;      
+        left: 0;  
+        transform: translateX(0);
+    }
+    
+    .copyright p {
+        margin: 1.7vw 0 0;        
+        font-size: 1em;        
+        left: -6em;
+        bottom: -5em;
+    }
+}   
