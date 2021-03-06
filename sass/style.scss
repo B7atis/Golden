@@ -346,9 +346,9 @@ footer ul li {
     font-size: 14px;
 }
 
-/* Responsiv w<618px h<315px */
+/* Responsiv 640px-320px */
 
-@media (max-width: 618px) and (min-height: 315px) {   
+@media (min-height: 640px) and (max-width: 320px) {   
     
     section {
         padding: 2em 0;
@@ -449,3 +449,62 @@ footer ul li {
         bottom: -5em;
     }
 }   
+
+/* Responsiv 320px-480px and 640px-768px */
+
+@media (min-height: 320px) and (min-width: 640px) and (max-height: 480px) and (max-width: 768px) {   
+    
+    section {
+        padding: 2em 0;
+    }
+
+    .btn {             
+        padding: 0.5em 1em 0.5em;        
+        font-size: 1.5em;
+        text-align: center;  
+        width: fit-content;    
+    }
+
+    p {
+        font-size: 1.2em;              
+    }
+
+    .navigation ul {        
+        position: absolute;
+        width: 90%;
+        flex-direction: row;        
+        top: 20vmin;        
+        left: 50%;
+        right: auto;
+        text-align: center;
+        transform: translateX(-45%);
+    }
+    
+    .navigation ul li {
+        display: block;
+        height: 2em;
+        text-align: center;
+        left: -5%;        
+        margin: 0 2% 0 0;
+        position: relative;        
+    }
+    
+    .navigation a {        
+        font-size: 1.1em;        
+    }
+    .golden {
+        font-size: 2em;
+        left: 7vmin;
+    }
+
+    .splash-inner {
+        top: 40%;    
+        flex-direction: column;   
+        align-content: center;   
+    }
+
+    .page-subtitle {
+        font-size: 1.7em;
+        margin-bottom: 2vh;
+    }
+}
