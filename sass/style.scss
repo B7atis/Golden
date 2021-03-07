@@ -346,9 +346,9 @@ footer ul li {
     font-size: 14px;
 }
 
-/* Responsiv 640px-320px */
+/* Responsiv 320px-640px */
 
-@media (min-height: 640px) and (max-width: 320px) {   
+@media (max-width: 320px) and (min-height: 640px) {   
     
     section {
         padding: 2em 0;
@@ -450,9 +450,9 @@ footer ul li {
     }
 }   
 
-/* Responsiv 320px-480px and 640px-768px */
+/* Responsiv 480px-320px and 768px-640px */
 
-@media (min-height: 320px) and (min-width: 480px) and (max-height: 640px) and (max-width: 768px) {   
+@media (min-width: 480px) and (min-height: 320px) and (max-width: 768px) and (max-height: 640px) {   
     
     section {
         padding: 2em 0;
@@ -553,5 +553,44 @@ footer ul li {
         font-size: 1em;        
         left: -6em;
         bottom: -5em;
+    }
+
+    /* Responsiv 620px-480px and 768px-530px */
+
+@media (min-width: 620px) and (min-height: 480px) and (max-width: 768px) and (max-height: 530px) {
+
+    .btn {             
+        padding: 0.5em 1em 0.5em;        
+        font-size: 1.5em;
+        text-align: center;     
+        width: fit-content;
+    }
+
+    .navigation ul {        
+        position: absolute;
+        width: 90%;
+        flex-direction: row;        
+        top: 15vh;        
+        left: 50%;
+        right: auto;
+        justify-content: center;
+        transform: translateX(-45%);
+    }
+    
+    .navigation ul li {
+        display: block;
+        height: 2em;
+        text-align: center;        
+        left: -5%;        
+        margin: 0 4% 0 0;
+        position: relative;        
+    }
+    
+    .navigation a {        
+        font-size: 1.2em;        
+    }
+    .golden {
+        font-size: 2em;
+        left: 7vmin;
     }
 }
