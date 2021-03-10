@@ -700,4 +700,56 @@ footer ul li {
         flex-direction: column;  
         align-content: center;         
     }
+
+    .page-subtitle {
+        font-size: 1.7em;
+        margin-bottom: 2vh;
+    }
+
+    .page-title {        
+        font-size: 2.1em;               
+        margin-bottom: 0;
+        padding-bottom: 3vh;            
+    }
+
+    .page-footer .row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+    }
+    
+    footer {
+        margin: 0;        
+    }
+
+    .social-media {             
+        left: -20px;     
+        transform: translateX(0);          
+    }
+
+    .social-media ul li{
+        margin: 0;
+    }
+    
+    .social-media ul li i {
+        font-size: 1.5rem;
+        height: 3rem;
+        width: 3rem;        
+        line-height: 3rem;         
+    }
+    
+    .copyright {        
+        height: 3em;       
+        bottom: 0.2em;      
+        left: 0;  
+        transform: translateX(0);
+    }
+    
+    .copyright p {
+        margin: 1.7vw 0 0;        
+        font-size: 1em;        
+        left: -6em;
+        bottom: -5em;
+    }
 }}
