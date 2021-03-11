@@ -752,4 +752,44 @@ footer ul li {
         left: -6em;
         bottom: -5em;
     }
+}
+
+/* Responsiv 900px-2560px-530px */
+
+@media (min-width: 900px) and (max-width: 2560px) and (min-height: 530px) {
+
+    .navigation ul {            
+        position: absolute;
+        top: 3em;                   
+    }
+
+    .navigation ul li {
+        display: inline;
+        font-size: 0.9em;
+        padding-right: 20px;         
+    }
+
+    .splash-inner {
+        flex-direction: column;
+        align-content: center;
+        top: 40%;
+    }
+
+    .page-title {
+        font-size: 2.1em;    
+        padding-bottom: 1em;    
+    }
+
+    .page-subtitle {        
+        font-size: 1.7em;
+    }
+
+    .btn {             
+        padding: 1em 2em 1em;        
+        font-size: 1.3em;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+       }
+       
 }}
