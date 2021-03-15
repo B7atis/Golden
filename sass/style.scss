@@ -348,9 +348,9 @@ footer ul li {
 
 /* Media */
 
-/* Responsiv min-width 320px max-height 736px */
+/* Responsiv min-width 320px min-height: 480px */
 
-@media (max-width: 320px) and (max-width: 414px) {
+@media (min-width: 320px) and (min-height: 480px) {
 
     .navigation ul li {
         margin: -5px 50px 5px 100px;
